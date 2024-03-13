@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bizimply demo</title>
+
+    <!--
+      [REQUIRED FOR IN-BROWSER ONLY]  
+      If you are running Vizzly's in-browser query engine, install Vizzly's in-memory DB
+    -->
+    <script src="https://static.app.vizzly.co/query-engine/0.8.4/vizzly-in-memory-db.umd.js"></script>
+ 
+    <!--
+      [REQUIRED]
+      Install Vizzly's dashboard
+    -->
+    <script src="https://static.app.vizzly.co/embedded/0.8.3-dev-ed07e56148f6bcf6db9ee03fdf713fe70735139d/bundle.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      dashboard.render({
+        dataSets: async () => {
+          const employeesDataSet = await fetch(`http://0.0.0.0:8999/data/employees_data-data-set.json`);
+          const engDataDataSet = await fetch(`http://0.0.0.0:8999/data/eng_data-data-set.json`);
+          const latesDataSet = await fetch(`http://0.0.0.0:8999/data/lates-data-set.json`);
+
+          return [
+            await employeesDataSet.json(),
+            await engDataDataSet.json(),
+            await latesDataSet.json()
+          ];
+        },
+        data: async (dataSet) => {
+          const data = await fetch(`http://0.0.0.0:8999/data/${dataSet.id}.json`);
+
+          return await data.json();
+        },
+        identity: async () => {
+          return {
+            "dataAccessToken": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikdic3JscGdJZzBPWG94QnJxZzdfSHFsWHB0YWxBV0VVS0dyZC1qUUo1RzAifQ.eyJwcm9qZWN0SWQiOiJwcmpfNGRlMzgwMmQyYTg1NDY5MGJlYmI2YWMxYzJhZjQ3NTIiLCJkYXRhU2V0SWRzIjoiKiIsInNlY3VyZUZpbHRlcnMiOnt9LCJleHBpcmVzIjoiMjAyNC0wMy0yN1QxNzoyNTowOC42NjZaIn0.CCL8LDJq7Zb_zYxXp4BgQqznl9N-0Lne-w7KYmdjG6AQypmEAZO4CkfX7ak4P4WLu6ftsPmOPgxkbtQgbgkllg",
+            "dashboardAccessToken": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikdic3JscGdJZzBPWG94QnJxZzdfSHFsWHB0YWxBV0VVS0dyZC1qUUo1RzAifQ.eyJhY2Nlc3NUeXBlIjoic3RhbmRhcmQiLCJwcm9qZWN0SWQiOiJwcmpfNGRlMzgwMmQyYTg1NDY5MGJlYmI2YWMxYzJhZjQ3NTIiLCJ1c2VyUmVmZXJlbmNlIjoiRGVmYXVsdCB1c2VyIHJlZmVyZW5jZSIsInNjb3BlIjoicmVhZF93cml0ZSIsImV4cGlyZXMiOiIyMDI0LTAzLTI3VDE3OjI1OjA4LjY3MVoifQ.PPuvbqGhsb28PM20P-rId2geoQA7bdC0aAXNQbn--3Ne0vYzYLc9GvJZVWoRcCkbs1UgVBF3TF6Mdv3Z1q2XKQ"
+          };
+        },
+      }
+      );
+    </script>
+    <vizzly-dashboard id="dashboard" />
+  </body>
+</html>
