@@ -7,8 +7,9 @@
       [REQUIRED FOR IN-BROWSER ONLY]  
       If you are running Vizzly's in-browser query engine, install Vizzly's in-memory DB
     -->
-    <script src="https://static.app.vizzly.co/query-engine/0.8.4/vizzly-in-memory-db.umd.js"></script>
- 
+    <!-- <script src="https://static.app.vizzly.co/query-engine/0.8.4/vizzly-in-memory-db.umd.js"></script> -->
+    <script src="http://0.0.0.0:9010/vizzly-in-memory-db.umd.js"></script>
+
     <!--
       [REQUIRED]
       Install Vizzly's dashboard
@@ -30,9 +31,7 @@
           ];
         },
         data: async (dataSet) => {
-          console.log('dataSet', dataSet);
           const data = await fetch(`http://0.0.0.0:8999/data/${dataSet.id}.json`);
-          console.log('data', data);
 
           return await data.json();
         },
