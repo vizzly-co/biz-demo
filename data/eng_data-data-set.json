@@ -1,5 +1,10 @@
 {
   "id": "eng_data",
   "name": "Engineering data",
-  "fields": []
+  "fields": [
+    {"id": "Store", "dataType": "string"},
+    {"id": "Response", "dataType": "string"},
+    {"id": "Week Starting", "dataType": "date_time"},
+    {"id": "Schedule", "dataType": "date_time"}
+  ]
 }

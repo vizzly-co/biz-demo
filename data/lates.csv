@@ -1,4 +1,4 @@
-Bizimply Unique ID,First Name,Last Name,Employee Number,Date,Location,Schedule,In Time,Minute Difference,Out Time,Minute Difference,Net Time
+Bizimply Unique ID,First Name,Last Name,Employee Number,Date,Location,Schedule,In Time,Minute Difference,Out Time,Minute Difference 2,Net Time
 229246,Chris,Pines,123,01/12/2023,Stepaside,07:00 - 15:00,7:01,-1,15:17,17,16
 229246,Chris,Pines,123,04/12/2023,Stepaside,07:00 - 15:00,7:00,0,15:55,55,55
 229246,Chris,Pines,123,05/12/2023,Stepaside,07:00 - 15:00,7:00,0,19:07,247,247
