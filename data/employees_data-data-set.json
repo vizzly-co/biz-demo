@@ -1,5 +1,29 @@
 {
   "id": "employees_data",
   "name": "Employees",
-  "fields": []
+  "fields": [
+    {"id": "Title", "dataType": "string"},
+    {"id": "First name", "dataType": "string"},
+    {"id": "Last name", "dataType": "string"},
+    {"id": "Email", "dataType": "string"},
+    {"id": "Phone number", "dataType": "string"},
+    {"id": "Address line 1", "dataType": "string"},
+    {"id": "Address line 2", "dataType": "string"},
+    {"id": "Address line 3", "dataType": "string"},
+    {"id": "Postcode", "dataType": "number"},
+    {"id": "Date of birth", "dataType": "date_time"},
+    {"id": "Gender", "dataType": "string"},
+    {"id": "Nationality", "dataType": "string"},
+    {"id": "T shirt size", "dataType": "string"},
+    {"id": "Visa expiry", "dataType": "date_time"},
+    {"id": "Emergency contact phone", "dataType": "string"},
+    {"id": "Position", "dataType": "string"},
+    {"id": "Location", "dataType": "string"},
+    {"id": "Main Schedule", "dataType": "string"},
+    {"id": "Start Date", "dataType": "date_time"},
+    {"id": "Finish Date", "dataType": "date_time"},
+    {"id": "Payroll Department", "dataType": "string"},
+    {"id": "Pay Rate Hourly", "dataType": "number"},
+    {"id": "Pay Rate Weekly", "dataType": "number"}
+  ]
 }
