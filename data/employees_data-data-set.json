@@ -2,6 +2,7 @@
   "id": "employees_data",
   "name": "Employees",
   "fields": [
+    {"id": "Position", "dataType": "string"},
     {"id": "Title", "dataType": "string"},
     {"id": "First name", "dataType": "string"},
     {"id": "Last name", "dataType": "string"},
@@ -17,7 +18,6 @@
     {"id": "T shirt size", "dataType": "string"},
     {"id": "Visa expiry", "dataType": "date_time"},
     {"id": "Emergency contact phone", "dataType": "string"},
-    {"id": "Position", "dataType": "string"},
     {"id": "Location", "dataType": "string"},
     {"id": "Main Schedule", "dataType": "string"},
     {"id": "Start Date", "dataType": "date_time"},

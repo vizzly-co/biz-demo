@@ -2,12 +2,12 @@
   "id": "lates",
   "name": "Lates",
   "fields": [
+    {"id": "Location", "dataType": "string"},
     {"id": "Unique ID", "dataType": "number"},
     {"id": "First Name", "dataType": "string"},
     {"id": "Last Name", "dataType": "string"},
     {"id": "Employee Number", "dataType": "number"},
     {"id": "Date", "dataType": "date_time"},
-    {"id": "Location", "dataType": "string"},
     {"id": "Schedule", "dataType": "string"},
     {"id": "In Time", "dataType": "string"},
     {"id": "Out Time", "dataType": "string"},
