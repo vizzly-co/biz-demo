@@ -29,6 +29,7 @@
   <body>
     <script type="module">
       dashboard.render({
+        theme: {rowLimit: 20},
         dataSets: async () => {
           const employeesDataSet = await fetch(`./data/employees_data-data-set.json`);
           const engDataDataSet = await fetch(`./data/eng_data-data-set.json`);
