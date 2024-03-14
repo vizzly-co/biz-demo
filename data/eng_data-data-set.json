@@ -1,6 +1,6 @@
 {
   "id": "eng_data",
-  "name": "Engineering data",
+  "name": "Engagement data",
   "fields": [
     {"id": "Store", "dataType": "string"},
     {"id": "Response", "dataType": "string"},
