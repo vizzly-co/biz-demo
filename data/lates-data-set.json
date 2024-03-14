@@ -2,7 +2,7 @@
   "id": "lates",
   "name": "Lates",
   "fields": [
-    {"id": "Bizimply Unique ID", "dataType": "number"},
+    {"id": "Unique ID", "dataType": "number"},
     {"id": "First Name", "dataType": "string"},
     {"id": "Last Name", "dataType": "string"},
     {"id": "Employee Number", "dataType": "number"},
