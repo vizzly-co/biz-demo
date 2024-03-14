@@ -11,7 +11,8 @@
     {"id": "Schedule", "dataType": "string"},
     {"id": "In Time", "dataType": "string"},
     {"id": "Out Time", "dataType": "string"},
-    {"id": "Minute Difference 2", "dataType": "number"},
+    {"id": "Minute Difference Clock In", "dataType": "number"},
+    {"id": "Minute Difference Clock Out", "dataType": "number"},
     {"id": "Net Time", "dataType": "number"}
   ]
 }
