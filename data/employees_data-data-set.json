@@ -24,6 +24,7 @@
     {"id": "Finish Date", "dataType": "date_time"},
     {"id": "Payroll Department", "dataType": "string"},
     {"id": "Pay Rate Hourly", "dataType": "number"},
-    {"id": "Pay Rate Weekly", "dataType": "number"}
+    {"id": "Pay Rate Weekly", "dataType": "number"},
+    {"id": "In employment?", "dataType": "boolean"}
   ]
 }
